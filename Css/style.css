@@ -1,0 +1,513 @@
+
+/* Common Css Start*/
+:root{
+    --primaryFont: 'Poppings', sans-serif;
+    --secondaryFont: 'PT Sans', sans-serif;
+    --HiglightColor: #FC0;
+    --secondaryColor: #353535;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+
+    
+}
+
+.container{
+    width: 1112px;
+    margin: 0 auto;
+}
+.inner_container{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.w33{
+    width: 33%;
+}
+
+
+
+/* Common Css Ends */
+
+
+nav #logo{
+    width: 30%;
+    
+}
+nav #menu{
+    width: 70%;
+    text-align: right;
+}
+nav #menu ul li{
+    display: inline-block;
+}
+nav #menu ul li a{
+    color: var(--secondaryColor)
+    font-family: var(--primaryFont)
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%; /* 30px */
+    padding: 18px 22px 5px;
+    text-transform: uppercase;
+    position: relative;
+}
+nav #menu ul li a::after{
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: var(--secondaryColor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+nav #menu ul li:hover a::after{
+    width: 100%;
+    transition: 0.5s;
+
+}
+
+/* banner Css Start */
+
+.banner{
+    margin: 78px;
+}
+#banner_info{
+  width: 50%;  
+}
+#banner_info h4{
+    color: var(--secondaryColor)
+    font-family: var(--primaryFont)
+    font-size: 24px;
+   font-weight: 400;  
+}
+#banner_info h1{
+    color: var(--secondaryColor);
+    font-family: var(--secondaryFont);
+    font-size: 64px;
+    font-weight: 700;
+}
+#banner_info p{
+    color: var(--secondaryColor);
+    font-family: var(--primaryFont);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 190%; /* 38px */
+    width: 50%;
+}
+
+#banner_info a{
+    color: #353535;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 180%; /* 36px */
+border: 1px solid #353535;
+border-radius: 20px;
+width: 209px;
+height: 69px;
+padding-left: 18px;
+padding-top: 14px;
+margin-right: 20px;
+margin-top: 77px;
+transition: 0.5s;
+}
+#banner_info a:hover{
+    background-color: #FC0;
+
+}
+
+#banner_img{
+    width: 50%;
+    display: block;
+}
+/* banner Css Finish*/
+
+/* About css Start */ 
+
+.About{
+    margin-top: 170px;
+    height: 556px;
+    background: linear-gradient(130deg, #FC0 0%, #FAFFCB 100%); ;
+}
+#about_img{
+    width: 50%;
+  
+}
+#about_info{
+    width: 50%;
+}
+#about_info h2{
+    color: #353535;
+    font-family: PT Sans;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 78px;
+
+}
+#about_info p{
+    color: #353535;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 190%; /* 38px */
+}
+#about_info a{
+    color: #353535;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%; /* 32.4px */
+    border: 1px solid black;
+    padding: 18px 44px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.5s;
+}
+#about_info a:hover{
+    background-color: #FFF;
+}
+
+/* About css Finish */
+
+/* Skill Css Start */ 
+
+.Skill .container{
+    margin-top: 150px;
+}
+.skill-box{
+    width: 350px;
+    height: 367px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    margin: 0 10px;
+   
+}
+#skill-icon img{
+    display:inline-block;
+    margin-left: 130px;
+    margin-bottom: 18px;
+    margin-top: 39px;
+}
+#skill-icon h3{
+    color: #353535;
+text-align: center;
+font-family: Poppins;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: 180%; /* 39.6px */
+}
+#skill-icon p{
+    color: #7A7A7A;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 190%; /* 30.4px */
+}
+/* Skill Css Start */
+
+/* Brand Css Start */ 
+
+.Brand{
+    margin-top: 162px;
+    position: relative;    
+}
+.Brand .container{
+    height: 473px;
+    border-radius: 30px;
+    background: linear-gradient(130deg, #FC0 0%, #FFF5CB 100%);
+   
+}
+
+#brand_img{
+    width: 50%;
+    
+}
+
+#brand_info{
+    width: 50%;
+    text-align: center;
+}
+#brand_info h2{
+    color: #353535;
+    font-family: PT Sans;
+    font-size: 44px;
+    font-weight: 700;
+    margin-top: 83px;
+
+}
+#brand_info p{
+    color: #353535;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 190%; /* 34.2px */
+   padding: 21px 65px 17px 103px;
+   text-align: left;
+}
+#brand_info a{
+    border-radius: 20px;
+    border: 1px solid #000;
+    font-family: var(--primaryFont);
+    color: var(--secondaryColor);
+    font-size: 17px;
+    line-height: 180%; 
+    padding: 17px 44px;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+#brand_info a:hover{
+    background-color: #FFF;
+}
+   
+
+.Brand .object{
+    bottom: 410px;
+    right: 300px;
+    position: absolute;
+}
+/* Brand Css Finish */
+
+
+/* Service Css Start */
+
+.Service{
+    margin-top: 147px;
+}
+#icon{
+    width: 50%;
+}
+.Service .box{
+    width: 380px;
+    height: 93px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    margin: 12px;
+}
+.box img{
+    
+    margin: 18px 18px 18px 0;
+    padding-left: 29px;
+}
+.box h4{
+    color: #353535;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: var(--primaryFont);
+    padding-top: 17px;
+    line-height: 180%; 
+}
+
+.box p{
+    color: #353535;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%; /* 21.6px */
+}
+.Service #icon-info{
+    width: 50%;
+}
+.Service #icon-info h2{
+    color: #353535;
+    text-align: right;
+    font-family: PT Sans;
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+.Service #icon-info p{
+    color: #353535;
+    text-align: right;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 190%;
+}
+
+.t2{
+    color: #353535;
+    text-align: left;
+    font-family: PT Sans;
+    font-size: 40px;
+    font-weight: 700;
+  
+
+}
+
+.t1{
+    color: #353535;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
+}
+.info1{
+    margin-left: 229px;
+    padding-top: 32px;
+}
+.info1 #text1 h6{
+    margin-right: 55px;
+}
+.info1 #taxt2 h6{
+    margin-right: 55px;
+    
+}
+
+/* Service Css Finish */
+
+
+/* Experience Css Start */ 
+.Experience{
+    margin-top: 225px;
+}
+.Experience .container{
+    margin: 100px auto;
+    position: relative;
+}
+.Experience .container::after{
+    content: '';
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    border-left: 2px dashed #7A7A7A;
+    left: 35%;
+    top: 0px;
+    
+}
+
+.Experience .row{
+    justify-content: space-between;
+    margin-top: 44px;
+}
+.Experience h2{
+    color: #353535;
+text-align: center;
+font-family: PT Sans;
+font-size: 50px;
+font-weight: 700;
+
+}
+.box-1{
+    margin-top: 100px;
+  
+}
+.Experience .row{
+    position: relative;
+}
+.Experience .row .experience_title::after{
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2px dashed #7A7A7A;
+    top: -20px;
+    left: 33%;
+    background:#FFF;
+    z-index: 5;
+    
+    
+}
+.Experience .row .experience_title::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #52AB70;;
+    top: -10px;
+    left: 34%;
+    z-index: 10;
+    
+    /*content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #52AB70;
+    position: absolute;
+    top: -9px;
+    left: 337px;*/
+}
+
+
+.experience_title{
+    width: 30%;
+}
+.experience_info{
+    width: 60%;
+}
+
+.experience_title h3{
+    color: #353535;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 43.2px */
+}
+.experience_title p{
+    color: #7A7A7A;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 180%; /* 32.4px */
+}
+
+.experience_info h3{
+    color: #353535;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 43.2px */
+}
+
+.experience_info p{
+    color: #7A7A7A;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200.5%; /* 36.09px */
+}
+
+
+
+
+ /*Experience Css Finish */
+
+
